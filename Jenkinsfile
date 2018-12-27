@@ -9,9 +9,9 @@ pipeline {
             }
         }
         post {
-            sucess {
+            success {
                 echo 'Arquivando'
-                archiveArtifacts artifacts: '**/target/*.war'
+                archiveArtifacts artifacts: '**/*.war'
             }
         }
     }
